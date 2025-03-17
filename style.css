@@ -1,0 +1,95 @@
+*{
+    margin:0px;
+    padding:0px;
+
+    box-sizing:border-box;
+}
+body{
+    background:url("t.png");
+    background-repeat: no-repeat;
+    background-position:fixed;
+    background-attachment:fixed;
+    background-size: cover;
+}
+
+.container{
+color:#282626;
+display:flex;
+align-items:center;
+justify-content:center;
+/* text-align:center; */
+flex-direction:column;
+gap:15px;
+background:whitesmoke;
+max-width:540px;
+width:100%;
+margin-top:50px;
+margin-left:30%;
+border-radius:5px;
+padding:20px;
+}
+input{
+ padding:10px;
+ width:300px;
+ border-radius:50px;
+ outline:none;
+ border:1px solid #ccc;
+ font-size:15px;
+}
+#add{
+    padding:10px;
+    width:70px;
+    border-radius:50px;
+    outline:none;
+    border:1px solid #ccc;
+ /*    background:rgb(109, 32, 32); */
+ background:url("t.png");
+    color:white;
+    text-decoration:none;
+}
+#add:hover{
+    background:url("image.png");
+    cursor:pointer;
+}
+ul li span{
+    color:black;
+    flex-grow:1;
+    text-align:left;
+ /*    margin-right:150px; */
+    text-overflow:ellipsis;
+    overflow:hidden;
+    font-size:20px;
+    font-weight:Bold;
+}
+ul li{
+    display:flex;
+    padding:5px;
+    max-width:400px;
+   overflow:hidden;
+   align-items:center;
+  gap:50px;
+}
+.completed-task{
+     text-decoration:line-through;
+    color:green;
+}
+button.completed-task{
+    background:url("image.png");
+    color:white;
+    text-decoration:none;
+}
+.button-group{
+    display:flex;
+   gap:10px;
+}
+ul li button{
+    background:url("t.png");
+    outline:none;
+    padding:10px;
+    border-style:none;
+    border-radius:50px;
+    color:white; 
+}
+ul li button:hover{
+    cursor:pointer;
+}
