@@ -54,12 +54,14 @@ function loadTasks(){
         const li=document.createElement("li");
         const span=document.createElement("span");
         span.innerText=tasks.text;
-        if(tasks.completed){
-            span.classList.add("completed-task");
-        }
         const completebtn=document.createElement("button");
         completebtn.innerHTML="Completed";
         completebtn.classList.add("completed");
+        if(tasks.completed){
+            span.classList.add("completed-task");
+            completebtn.classList.add("completed-task");
+        }
+        
         completebtn.onclick=function(){
             span.classList.toggle("completed-task");
             completebtn.classList.toggle("completed-task");
@@ -79,5 +81,6 @@ function loadTasks(){
          li.appendChild(span);
         li.appendChild(btncont);
         listContainer.appendChild(li);
+     
     });
 }
